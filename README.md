@@ -1,5 +1,6 @@
 # api-boiler
 
 ```
- dev_appserver.py app/
+go build
+./api-boiler
 ```
