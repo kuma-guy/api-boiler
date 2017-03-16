@@ -1,6 +1,7 @@
 package main
 
 import (
+	"api-boiler/cmd"
 	"os"
 
 	"github.com/codegangsta/cli"
@@ -14,7 +15,7 @@ func main() {
 	app.Usage = "command line utility"
 
 	app.Commands = []cli.Command{
-		serverCmd,
+		cmd.Server,
 	}
 
 	app.Run(os.Args)

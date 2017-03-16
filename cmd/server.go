@@ -1,4 +1,4 @@
-package main
+package cmd
 
 import (
 	"net/http"
@@ -9,7 +9,7 @@ import (
 	"github.com/codegangsta/cli"
 )
 
-var serverCmd = cli.Command{
+var Server = cli.Command{
 	Name:  "server",
 	Usage: "starts the server daemon",
 	Action: func(c *cli.Context) {
