@@ -16,6 +16,7 @@ func main() {
 
 	app.Commands = []cli.Command{
 		cmd.Server,
+		cmd.Migrate,
 	}
 
 	app.Run(os.Args)
