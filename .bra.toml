@@ -1,0 +1,19 @@
+[run]
+init_cmds = [
+	["go", "install"],
+	["go", "build"],
+	["./api-boiler", "server"]
+]
+watch_all = true
+watch_dirs = [
+	"$WORKDIR/server",
+]
+watch_exts = [".go"]
+ignore = [".git", "node_modules"]
+ignore_files = []
+build_delay = 1500
+cmds = [
+	["go", "install"],
+	["go", "build"],
+	["./api-boiler", "server"]
+]
