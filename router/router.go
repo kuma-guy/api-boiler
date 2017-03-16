@@ -13,7 +13,9 @@ func Load(middleware ...gin.HandlerFunc) http.Handler {
 	e := gin.New()
 	e.Use(gin.Recovery())
 
-	e.GET("/hello", server.GetHello)
+	e.Use(middleware...)
+
+	e.GET("/api/hello", server.GetHello)
 
 	return e
 }
